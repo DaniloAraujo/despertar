@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="./images/fivicon.png" />
+    <link rel="icon" type="image/png" href="./images/logo.png" />
     <title>Igreja Despertar</title>
     <!-- CSS BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -28,40 +28,49 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Sobre</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Endereço</a>
-                        </li>
-                        <li class="nav-item">
+                        <li class="nav-item pe-3">
                             <a class="nav-link" href="#">Agenda</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Ao Vivo</a>
+                        <li class="nav-item pe-3">
+                            <a class="nav-link" href="#">Endereço</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Ofertas</a>
+                        <li class="nav-item dropdown pe-3">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropConectar" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Conectar
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark"
+                                aria-labelledby="dropConectar">
+                                <li><a class="dropdown-item" href="#/" target="_blank">Orações</a></li>
+                                <li><a class="dropdown-item" href="#" target="_blank">Testemunhos</a></li>
+                            </ul>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        <li class="nav-item pe-3">
+                            <a class="nav-link" href="#">Contribuir</a>
+                        </li>
+                        <li class="nav-item dropdown pe-3">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropSocial" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Social
                             </a>
-                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark"
-                                aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#" target="_blank">Instagram</a></li>
-                                <li><a class="dropdown-item" href="#" target="_blank">Facebook</a></li>
-                                <li><a class="dropdown-item" href="#" target="_blank">Youtube</a></li>
-                                <li><a class="dropdown-item"
+                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark" aria-labelledby="dropSocial">
+                                <li pe-3><a class="dropdown-item" href="https://www.instagram.com/idedespertar/"
+                                        target="_blank">Instagram</a></li>
+                                <li pe-3><a class="dropdown-item" href="https://www.facebook.com/iidedespertar"
+                                        target="_blank">Facebook</a></li>
+                                <li pe-3><a class="dropdown-item" href="#" target="_blank">Youtube</a></li>
+                                <li pe-3><a class="dropdown-item"
                                         href="https://open.spotify.com/playlist/7CfWCQFN3a7jc4q2XR7P3B?si=31c018bd814f4755&nd=1"
                                         target="_blank">Spotify</a>
                                 </li>
-                                <li>
+                                <li pe-3>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#" target="_blank">Whatsapp</a></li>
+                                <li pe-3><a class="dropdown-item" href="#" target="_blank">Whatsapp</a></li>
                             </ul>
+                        </li>
+                        <li class="nav-item pe-3">
+                            <a class="nav-link" href="#">Ao Vivo</a>
                         </li>
                     </ul>
                 </div>
@@ -79,18 +88,21 @@
                     aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                     aria-label="Slide 3"></button>
-                <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                        aria-label="Slide 4"></button> -->
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="3000">
-                    <img src="./images/WhatsApp Image 2023-01-10 at 10.24.34.jpeg" class="d-block w-100" alt="...">
+                    <img src="./images/1.png" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item" data-bs-interval="3000">
-                    <img src="./images/WhatsApp Image 2023-01-10 at 10.27.02 col.jpeg" class="d-block w-100" alt="...">
+                    <img src="./images/2.png" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item" data-bs-interval="3000">
-                    <img src="./images/WhatsApp Image 2023-01-10 at 10.27.02.jpeg" class="d-block w-100" alt="...">
+                    <img src="./images/3.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./images/4.png" class="d-block w-100" alt="...">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -190,21 +202,67 @@
             </p>
         </section>
 
-        <section>
+        <section class="bg-gradient">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
-
+                    <div class="col-md-6 d-flex align-items-center p-3">
+                        <img src="/images/logoFull-removebg-preview.png" class="img-fluid" alt="imgLogo">
                     </div>
                     <div class="col-md-6">
-                        <div class="ratio ratio-16x9">
+                        <h1 class="text-light text-center">Como Chegar</h1>
+                        <div class="ratio ratio-16x9  d-flex align-items-center p-3">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14587.85430931841!2d-47.08620123022461!3d-23.926343799999987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cfbede1b5983ff%3A0xc83d49289a054cb8!2sAv.%20Trinta%20e%20Um%20de%20Mar%C3%A7o%2C%20955%20-%20Lot.%20Parque%20do%20Rio%20Sao%20Lourenco%20I%20II%20III%2C%20Juquitiba%20-%20SP%2C%2006950-000!5e0!3m2!1spt-BR!2sbr!4v1673728635323!5m2!1spt-BR!2sbr"
                                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                referrerpolicy="no-referrer-when-downgrade" class="rounded"></iframe>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-6 d-flex align-items-center p-3">
+                        <img src="/images/logoFull-removebg-preview.png" class="img-fluid" alt="imgLogo">
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center align-items-center">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/images/qrCode.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a class="btn btn-primary" href="https://nubank.com.br/pagar/2vjvn/7t8fnJ5AZU">PIX</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="d-flex justify-content-center">
+                <form action="https://api.staticforms.xyz/submit" method="post" class="border rounded p-3">
+                    <h2 class="text-light text-center">Pedidos de Oração</h2>
+                    <div class="mb-3">
+                        <label for="name" class="form-label text-light">Nome</label>
+                        <input type="text" name="name" class="form-control" id="name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="fone" class="form-label text-light">Telefone</label>
+                        <input type="tel" name="phone" class="form-control" id="fone" placeholder="(00) 00000-0000">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label text-light">Pedido de Oração</label>
+                        <textarea name="message" class="form-control" id="message" rows="3"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <input type="submit" value="Enviar" class="btn btn-primary">
+                    </div>
+
+                    <!-- ITENS DA API -->
+                    <input type="hidden" name="accessKey" value="89c398df-fb71-42c5-af2a-4f1b281682f7">
+                    <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/index.html">
+                </form>
             </div>
         </section>
     </main>
