@@ -41,8 +41,9 @@
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark"
                                 aria-labelledby="dropConectar">
-                                <li><a class="dropdown-item" href="#/" target="_blank">Orações</a></li>
-                                <li><a class="dropdown-item" href="#" target="_blank">Testemunhos</a></li>
+                                <li><a class="dropdown-item" href="/oracoes.html" target="_blank">Orações</a></li>
+                                <li><a class="dropdown-item" href="/testemunhos.html" target="_blank">Testemunhos</a>
+                                </li>
                             </ul>
                         </li>
                         <li class="nav-item pe-3">
@@ -149,7 +150,7 @@
                     <!-- Button trigger modal -->
                     <div class="text-center">
                         <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
-                            data-bs-target="#modalAoVivo">
+                            data-bs-target="#modalAoVivo" id="btnCulto">
                             Culto ao vivo
                         </button>
                     </div>
@@ -240,30 +241,7 @@
         </section>
 
         <section class="container">
-            <div class="d-flex justify-content-center">
-                <form action="https://api.staticforms.xyz/submit" method="post" class="border rounded p-3">
-                    <h2 class="text-light text-center">Pedidos de Oração</h2>
-                    <div class="mb-3">
-                        <label for="name" class="form-label text-light">Nome</label>
-                        <input type="text" name="name" class="form-control" id="name">
-                    </div>
-                    <div class="mb-3">
-                        <label for="fone" class="form-label text-light">Telefone</label>
-                        <input type="tel" name="phone" class="form-control" id="fone" placeholder="(00) 00000-0000">
-                    </div>
-                    <div class="mb-3">
-                        <label for="message" class="form-label text-light">Pedido de Oração</label>
-                        <textarea name="message" class="form-control" id="message" rows="3"></textarea>
-                    </div>
-                    <div class="text-center">
-                        <input type="submit" value="Enviar" class="btn btn-primary">
-                    </div>
 
-                    <!-- ITENS DA API -->
-                    <input type="hidden" name="accessKey" value="89c398df-fb71-42c5-af2a-4f1b281682f7">
-                    <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/index.html">
-                </form>
-            </div>
         </section>
     </main>
 
@@ -279,7 +257,8 @@
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
     <!-- FIM -->
-    <script src="/script.js"></script>
+    <script src="/script.js" type="module"></script>
+    <script src="/data.js"></script>
 </body>
 
 </html>
