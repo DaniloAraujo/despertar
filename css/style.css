@@ -7,14 +7,13 @@
 
 .rodape__esquerda {
     display: flex;
-    /* align-items: center;
-    justify-content: center; */
     flex-direction: column;
 }
 
 .esquerda__icones {
     display: flex;
     margin-bottom: 10px;
+    margin-left: 2rem;
 }
 
 .esquerda__icones img {
@@ -34,6 +33,7 @@
 .contato__icone img {
     width: 2rem;
     margin-right: 5px;
+    margin-left: 2rem;
 }
 
 .email__link a {
@@ -41,16 +41,25 @@
     text-decoration: none;
 }
 
+.email__link a:hover {
+    color: rgb(173, 172, 172);
+}
+
 .direita__links {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end;
 }
 
 .direita__links a {
     color: #FFF;
     margin: 5px;
+    margin-right: 2rem;
     text-decoration: none;
+}
+
+.direita__links a:hover {
+    color: rgb(173, 172, 172);
 }
 
 .email__contato1 {
