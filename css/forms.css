@@ -1,5 +1,23 @@
 .banner {
+    background-image: url(../images/oracao.png);
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+.rodape {
     display: flex;
-    align-items: center;
     justify-content: center;
+}
+
+.rodape img {
+    height: 10rem;
+}
+
+@media (max-width: 767px) {
+    .banner {
+        height: 40vh;
+    }
 }

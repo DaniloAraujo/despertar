@@ -20,7 +20,7 @@ if (((dia === 0 && hora >= 10 && hora <= 12) || (dia === 3 && hora >= 19 && hora
 
     modalTitulo.innerHTML += `<strong>Live Streaming...</strong>`;
 } else {
-    modal.innerHTML += `<p>No momento não estamos ao vivo, mas você pode assistir aos outros cultos no Youtube :) <br>
+    modal.innerHTML += `<p>Não estamos ao vivo, mas você pode assistir aos outros cultos no Youtube :) <br>
                             <a href="https://www.youtube.com/channel/UCDLjvM9tEdjod3PdgFv8mnw" target="_blank">Igreja Despertar</a>
                         </p>
                         <p>

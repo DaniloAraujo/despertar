@@ -94,10 +94,10 @@
                                         href="https://open.spotify.com/playlist/7CfWCQFN3a7jc4q2XR7P3B?si=31c018bd814f4755&nd=1"
                                         target="_blank">Spotify</a>
                                 </li>
-                                <li pe-3>
+                                <!-- <li pe-3>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li pe-3><a class="dropdown-item" href="#" target="_blank">Whatsapp</a></li>
+                                <li pe-3><a class="dropdown-item" href="#" target="_blank">Whatsapp</a></li> -->
                             </ul>
                         </li>
                         <li class="nav-item pe-3">
@@ -153,7 +153,7 @@
     </section>
 
     <main>
-        <section class="pt-5 pb-5 pe-3 ps-3 bg-gradient">
+        <section class="pt-5 pb-5 pe-3 ps-3 bg-gradient" id="sobreSec">
             <!-- SOBRE -->
             <div class="mt-5 mb-5">
                 <h1 class="text-white-50 text-center">Despertar é uma igreja que acredita em <br> Jesus, uma igreja que
@@ -175,12 +175,12 @@
         <section>
             <!-- AO VIVO -->
             <div class="aoVivo bg-image" id="live">
-                <h2 class="pt-4 text-light text-center h1">Igreja Despertar online</h2>
-                <p class="text-light text-center fs-2">Para adorar a Deus de onde você estiver (cultos online)</p>
-                <p class="text-light text-center fs-4">A adoração é poderosa, a Palavra de Deus que muda vidas é
-                    pregado e nós cremos <br> o Espírito Santo
-                    terá liberdade e será presente em todos os corações e lares enquanto nos reunimos <br> de qualquer
-                    lugar do mundo.
+                <h2 class="pt-4 text-light text-center h1">Igreja Despertar Online</h2>
+                <p class="text-light text-center fs-2">Para adorar a Deus de onde você estiver</p>
+                <p class="text-light text-center fs-4">A adoração é poderosa! A Palavra de Deus muda vidas e, através do
+                    Espirito Santo, cremos <br> que a mesma estará presente em todos os corações e lares enquanto nos
+                    reunimos <br> de qualquer
+                    lugar do Mundo.
                 </p>
                 <div class="text-center">
                     <!-- Button trigger modal -->
@@ -218,9 +218,9 @@
             <!-- FIM AO VIVO -->
         </section>
 
-        <section class="container pt-5 pb-5">
-            <!-- PRECISA FAZER -->
-            <h2 class="text-white-50 text-center">Our Commitment to Racial Diversity</h2>
+        <!-- <section class="container pt-5 pb-5"> -->
+        <!-- PRECISA FAZER -->
+        <!-- <h2 class="text-white-50 text-center">Our Commitment to Racial Diversity</h2>
             <p class="pt-3 pb-5 fs-5 text-white-50 text-center">Hillsong Church is a globally diverse church which is
                 committed to
                 racial equity and <br> justice for all. Our
@@ -232,11 +232,11 @@
                 <br>
                 ensure
                 that all people are treated with dignity and respect.
-            </p>
-            <!-- FIM ... -->
-        </section>
+            </p> -->
+        <!-- FIM ... -->
+        <!-- </section> -->
 
-        <section class="bg-gradient">
+        <section class="bg-gradient mt-5" id="ondeEstamos">
             <!-- ENDEREÇO -->
             <div class="container" id="endereco">
                 <div class="row">
@@ -265,9 +265,11 @@
         <section>
             <!-- OFERTAS -->
             <div class="container" id="contribuir">
-                <div class="row text-center">
+                <a href="https://nubank.com.br/pagar/2vjvn/7t8fnJ5AZU"><img
+                        src="./images/WhatsApp Image 2023-02-07 at 00.26.59.jpeg" class="img-fluid" alt=""></a>
+                <!-- <div class="row text-center">
                     <div class="col-md-6 d-flex align-items-center p-3">
-                        <img src="/images/logoFull-removebg-preview.png" class="img-fluid" alt="imgLogo">
+                        <img src="/images/colabore.jpeg" class="img-fluid" alt="imgLogo">
                     </div>
                     <div class="col-md-6 d-flex justify-content-center align-items-center">
                         <div class="card" style="width: 18rem;">
@@ -277,7 +279,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
             <!-- FIM OFERTAS -->
         </section>
@@ -294,10 +296,14 @@
     <footer class="rodape">
         <div class="rodape__esquerda">
             <div class="esquerda__icones">
-                <a href="#"><img src="/images/instagram.png" alt=""></a>
-                <a href="#"><img src="/images/facebook.png" alt=""></a>
-                <a href="#"><img src="/images/spotify.png" alt=""></a>
-                <a href="#"><img src="/images/youtube.png" alt=""></a>
+                <a href="https://www.instagram.com/idedespertar/" target="_blank"><img src="/images/instagram.png"
+                        alt=""></a>
+                <a href="https://www.facebook.com/iidedespertar" target="_blank"><img src="/images/facebook.png"
+                        alt=""></a>
+                <a href="https://open.spotify.com/playlist/7CfWCQFN3a7jc4q2XR7P3B?si=31c018bd814f4755&nd=1"
+                    target="_blank"><img src="/images/spotify.png" alt=""></a>
+                <a href="https://www.youtube.com/channel/UCDLjvM9tEdjod3PdgFv8mnw" target="_blank"><img
+                        src="/images/youtube.png" alt=""></a>
             </div>
             <div class="email__contato">
                 <div class="contato__icone">
@@ -310,11 +316,11 @@
         </div>
         <div class="rodape__direita">
             <div class="direita__links">
-                <a href="">Quem Somos</a>
-                <a href="">Orações</a>
-                <a href="">Testemunhos</a>
-                <a href="">Onde Estamos</a>
-                <a href="">Seja um Colaborador</a>
+                <a href="#sobreSec">Quem Somos</a>
+                <a href="./oracoes.html" target="_blank">Orações</a>
+                <a href="./testemunhos.html" target="_blank">Testemunhos</a>
+                <a href="#ondeEstamos">Onde Estamos</a>
+                <a href="#contribuir">Seja um Colaborador</a>
                 <div class="email__contato1">
                     <div class="contato__icone">
                         <img src="/images/email.png" alt="">

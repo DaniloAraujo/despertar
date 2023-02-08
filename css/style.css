@@ -3,11 +3,13 @@
     justify-content: space-between;
     margin-top: 10rem;
     padding: 1em;
+    background-color: #3f3e3e;
 }
 
 .rodape__esquerda {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .esquerda__icones {
@@ -66,7 +68,7 @@
     display: none;
 }
 
-@media (max-width: 767px) {
+    @media (max-width: 767px) {
     .rodape {
         flex-direction: column;
     }
