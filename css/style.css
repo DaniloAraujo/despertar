@@ -1,7 +1,12 @@
+.imgPix {
+    display: flex;
+    justify-content: center;
+}
+
 .rodape {
     display: flex;
     justify-content: space-between;
-    margin-top: 10rem;
+    margin-top: 5rem;
     padding: 1em;
     background-color: #3f3e3e;
 }
@@ -68,13 +73,15 @@
     display: none;
 }
 
-    @media (max-width: 767px) {
+@media (max-width: 767px) {
+
     .rodape {
         flex-direction: column;
     }
 
     .rodape__esquerda {
-        align-items: flex-start;
+        align-items: center;
+        justify-content: center;
     }
 
     .email__contato {
